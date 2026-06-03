@@ -1,0 +1,91 @@
+body{
+   background-image: linear-gradient(rgb(247, 152, 11),rgb(245, 241, 241));
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+
+}
+::selection{
+       color: rgb(248, 248, 250);
+       background-color: rgb(244, 6, 252);
+}
+
+#main{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: linear-gradient(#00c9ff,#92fe9d);
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 55px;
+    color: white; 
+    box-shadow: 3px 3px 10px 2px black;   
+    box-sizing: border-box;
+}
+label{
+   letter-spacing: 3px;
+}
+#heading{
+   display: flex;
+   justify-content: center;
+   color: whitesmoke;
+   letter-spacing: 3px;
+   font-family: sans-serif;
+   position: fixed;
+}
+
+input[type="text"]{
+    background-color: transparent;
+    border-bottom-color: whitesmoke;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    outline: none;
+    padding: 10px ;
+    display: flex;
+}
+button{
+    padding: 5px;
+    color: whitesmoke;
+    background-color: red;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    transition: 300ms;
+}
+
+input[type="text"]:hover{
+    border-bottom-color: rgb(19, 13, 12);
+   
+}
+
+.mt{
+    margin-top: 50px;
+}
+button:hover{
+   transform: scale(1.1)
+}
+
+p{
+    color: black;
+    font-weight: bold;
+    font-size: smaller;
+    display: none;
+
+}
+
+.toggle_p{
+    display: block;
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
