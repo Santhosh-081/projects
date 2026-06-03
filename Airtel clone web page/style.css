@@ -1,0 +1,767 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins' , sans-serif;
+    max-width: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+/*header*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border: 0.5px solid black;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+}
+#align i{
+    display: none;
+}
+/*logo*/
+#logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#logo i{
+    margin-left: 0.5rem;
+    display: none;
+}
+#logo svg{
+    width: 6rem;
+    height: 4rem;
+    display: inline-block;
+    margin-left: 1rem;
+}
+/*navigation*/
+ul{
+    color: rgb(12, 11, 11);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-family: 'Poppins' , sans-serif;
+    width: 80%;
+    height: 2rem;
+    text-align: center;
+    margin-left: 0.8rem;
+}
+ul li{
+    cursor: pointer;
+    font-weight: 549;
+    padding-bottom: 1rem;
+    margin-top: 1.3rem;
+}
+ul li button{
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 0.2rem;
+    outline: none;
+}
+i{
+    color: black;
+    font-size: 1.1rem;
+    transition: 500ms;
+}
+#most{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 0.8rem;
+}
+#mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#store{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+/*navigation hover effects*/
+header>ul>li:focus{
+   color: #ff0000;
+   border: none;
+   outline: none;
+   font-weight: 5;
+   border-bottom: 2px solid #ff0000
+} 
+header>ul>li:focus i{
+    transform: rotate(180deg);
+    color: #ff0000;
+}
+/*mobile navigation*/
+#mobileNavigation ul{
+   flex-direction: column;
+   justify-content: space-evenly;
+   width: 20%;
+   height: 100vh;
+   z-index: 1;
+   position: absolute;
+   top: 0;
+   display: none;
+   left: -49rem;
+}
+#mobileNavigation ul li:focus{
+    color: #ff0000;
+    border: none;
+    outline: none;
+    font-weight: 5;
+ } 
+ #mobileNavigation ul li:focus i{
+     transform: rotate(180deg);
+     color: #ff0000;
+ }
+/*image section*/
+#banner{
+    width: 100%;
+    top: 4rem;
+}
+#banner img{
+    width: 100%;
+}
+/*recharge section*/
+#recharge_div{
+    background-color: #ff0000;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 7rem;
+    font-family: 'Poppins' , sans-serif;
+}
+/*text div*/
+#recharge_div #text{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 1rem;
+    line-height: 1.5rem;
+}
+/*btn and input div*/
+#recharge_div #btnAndInput{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 2rem;
+    margin-right: 1rem;
+}
+/*btn div*/
+#recharge_div #btnAndInput #button_div{
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+} 
+#recharge_div #btnAndInput #button_div button:nth-child(1){
+    color: #ff0000;
+    background-color: #fff;
+}
+#recharge_div #btnAndInput #button_div button #pre{
+    color: black;
+}
+/* buttons*/
+#recharge_div #btnAndInput #button_div button{
+    outline: none;
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 2px;
+    padding: 0.4rem;
+}
+#recharge_div #btnAndInput #button_div button i{
+    color: #fff;
+    font-size: 13px;
+}
+#recharge_div #btnAndInput #button_div button img{
+    width: 10px;
+    height: 10px;
+    background-color: rgb(245, 239, 239);
+}
+/*hover effects for btns*/
+#recharge_div #btnAndInput #button_div button:hover{
+    color: #ff0000;
+    background-color: #fff;
+}
+#recharge_div #btnAndInput #button_div button:hover i{
+    color: black;
+}
+/*recharge input box*/
+#rechargeInput{
+    background-color: #fff;
+    width: 100%;
+    position: relative;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+}
+#rechargeInput input{
+    border: none;
+    outline: none;
+    width: 80%;
+    padding: 0.6rem;
+    border-radius: 5px;
+    z-index: -3;
+}
+#rechargeInput button{
+    background-color: #ff0000;
+    border: none;
+    outline: none;
+    padding: 0.4rem;
+    border-radius: 3px;
+    color: #fff;
+    position: absolute;
+    right: 0.5rem;
+    top: 3.5px;
+}
+/*experience section*/
+#experience_div{
+    background-color: rgb(207, 194, 194);
+    display: grid;
+    place-items: center;
+    height: 20rem;
+}
+#experience_div h2{
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+    align-self: flex-start;
+    float: left;
+    position: absolute;
+}
+#experience_div #boxes{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   width: 80%;
+   margin-top: 4rem;
+}
+#experience_div #boxes div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    background-color: #fff;
+    width: 15%;
+    height: 5rem;
+    margin-top: 1rem;
+    padding: 0.3rem;
+    line-height: 1.5rem;
+}
+#experience_div #boxes div img{
+    width: 100%;
+    height: 30%;
+}
+/*experience div mobile*/
+#experienceMobile{
+    width: 91%;
+    height: 12rem;
+    margin-top: 3rem;
+    padding-left: 1.5rem;
+    padding-top: 1.5rem;
+    display: none;
+}
+#experienceMobile h4{
+    line-height: 1.5rem;
+}
+#experienceMobile h4 span{
+    color: rgb(245, 7, 7);
+}
+#experienceMobile h4 span i{
+    color: rgb(255, 7, 7);
+}
+#experienceMobile button{
+    background-color: black;
+    color: #fff;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    font-family: 'Poppins' , sans-serif;
+    letter-spacing: 2px;
+}
+#experienceMobile h5 hr{
+    width: 5rem;
+    height: 0.3rem;
+    background-color: rgb(255, 7, 7);
+    border: none;
+    opacity: 1;
+    margin-top: 0.2rem;
+}
+/*black seaction*/
+#black{
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+    background-color: black;
+}
+#black #one{
+    width: 50%;
+    padding-left: 1rem;
+}
+#black #blackLogo{
+    width: 30%;
+    margin-top: 1rem;
+}
+#black #blackLogo img{
+    width: 4rem;
+}
+#black #blackLogo h4{
+    color: #fff;
+}
+#black #one #enjoy{
+    width: 100%;
+    margin-top: 1rem;
+}
+#black #one #enjoy h3 span{
+   color: rgb(255, 255, 255);
+   font-weight: 700;
+}
+#black #one #enjoy h3{
+    letter-spacing: 0.2rem;
+    font-size: 40px;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: lighter;  
+    color: rgb(209, 196, 196);
+    margin-top: 1rem;
+    line-height: 3rem;
+ }
+ #black #one #para{
+     color: rgb(110, 114, 114);
+     width: 80%;
+     margin-top: 1rem;
+     letter-spacing: 0.1rem;
+     line-height: 2rem;
+ }
+ #black #one button{
+     background-image: linear-gradient(red ,rgb(39, 23, 23));
+     border: none;
+     outline: none;
+     color: #fff;
+     border-radius: 6rem;
+     padding: 1rem;
+     width: 30%;
+     margin-top: 2rem;
+     text-align: center;
+ }
+#black #two{
+    display: flex;
+    align-items: flex-end;
+}
+#black #two img{
+     width: 80%;
+     height: 80%;
+}
+/*postpaid seaction*/
+#postpaid{
+    display: flex;
+    justify-content:space-around;
+    height: 22rem;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+#post1{
+    width: 50%;
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+#post1 h5 hr{
+    background-color: red;
+    height: 0.2rem;
+    border: none;
+    width: 1.4rem;
+    opacity: 1;
+    margin-top: 0.2rem;
+}
+#post1 #postHead{
+    line-height: 1.7rem;
+    margin-top: 1.4rem;
+}
+#post1 #postHead h3{
+    width: 80%;
+}
+#post1 #postHead h3 span{
+    color: red;
+}
+#post1 #postHead2{
+    line-height: 1.7rem;
+    margin-top: 1.4rem;
+}
+#post1 #postBox{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.4rem;
+}
+#post1 #postBox div{
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 0.4rem;
+    line-height: 1.5rem;
+    box-shadow: 0px 0px 4px 0.1px black;
+}
+#post1 #postBox div p:nth-child(3){
+    color: rgb(248, 9, 9);
+}
+#post1 #postBox div:nth-child(3) p{
+    color: rgb(248, 9, 9);
+}
+#postpaid #post2{
+   display: grid;
+   place-items: center;
+   width: 30%;
+}
+#postpaid #post2 img{
+    height: 20rem;
+    float: right;
+    margin-right: 1rem;
+}
+/*footer*/
+footer{
+    margin-top: 3rem;
+}
+footer #firstFooter{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+footer div h3{
+    opacity: 0.8;
+}
+footer p{
+    margin-top: 1rem;
+    opacity: 0.7;
+}
+footer div h2{
+    color: #ce1f1f;
+    font-family: 'Poppins' , sans-serif;
+}
+footer #secondFooter{
+    margin-top: 3rem;
+    margin-left: 1.5rem;
+}
+footer hr{
+    color: red;
+    opacity: 0.5;
+}
+footer h2 i{
+    transform: rotate(-90deg);
+    font-size: x-large;
+    font-weight: lighter;
+    color: #ce1f1f;
+}
+#footerLast{
+    display: flex;
+    flex-direction: column;
+}
+#footerLast div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10rem;
+}
+#footerLast h2{
+    cursor: pointer;
+}
+#footerLast div i{
+   font-size: xx-large;
+   opacity: 0.5;
+}
+/*footer for mobile*/
+#footerMobile{
+    margin-top: 8rem;
+    display: none;
+}
+#footerMobile h3,
+#footerMobile h3 i
+{
+    color: #ce1f1f;
+    text-align: center;
+}
+#footerMobile h3 i{
+    transform: rotate(-90deg);
+}
+#mobileList{
+    padding: 0.8rem;
+    margin-top: 2rem;
+}
+#mobileList div {
+   display: flex;
+   width: 100%;
+   height: 3rem;
+   justify-content: space-between;
+   align-items: center;
+}
+#mobileList div p{
+    opacity: 1;
+}
+#mobileList div i{
+   opacity: 0.5;
+}
+#footIcons{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 3rem;
+}
+#footIcons div{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+#footIcons div i{
+    font-size: xx-large;
+    opacity: 0.6;
+}
+#mobileList2{
+    margin:  4rem 1rem 1rem 1rem;
+}
+#mobileList2 p{
+    margin-top: 1rem;
+    line-height: 1.4rem;
+    opacity: 0.8;
+    font-size: 1rem;
+}
+#mobileList2 p:nth-child(5){
+    color: red;
+    opacity: 1;
+}
+
+/*media queries*/
+@media only screen and (max-width:960px){
+   ul{
+       display: none;
+   }
+   #logo{
+       justify-content: space-between;
+   }
+  #logo i{
+      display: block;
+  }
+  #mobileNavigation{
+    width: 100%;
+    z-index: 2;
+  }
+  #mobileNavigation ul{
+      display: block;
+      background-color: rgb(255, 255, 255);
+      width: 80%;
+      padding: 0; 
+      transition: 500ms;
+      
+  }
+  #mobileNavigation ul li{
+      display: flex;
+      justify-content:space-between;
+      align-items: center;
+      width: 100%;
+      font-weight: bold;
+      height: 5vh;
+      padding: 0;
+  }
+  #mobileNavigation ul li a{
+      margin-left: 1rem;
+  }
+  #mobileNavigation ul li i{
+      margin-right: 2rem;
+  }
+  hr{
+      width: 100%;
+      height: 0.1px;
+      opacity: 0.3;
+  }
+  #navFooter{
+     background-color: rgb(255, 255, 255);
+     align-self: flex-end;
+     z-index: 1;
+     margin-top: 11rem;
+  }
+  #navFooter #button button{
+      width: 90%;
+      padding: 1rem;
+      border: none;
+      outline: none;
+      opacity: 0.9;
+  }
+  #navFooter #list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+  } 
+  #navFooter #list li{
+     display: flex;
+     justify-content: center;
+     font-family: 'Poppins' , sans-serif;
+     align-items: center;
+     font-stretch: normal;
+     font-weight: 700;
+     font-size: small;
+     height: 5vh;
+  }
+  #navFooter #list li:nth-child(1){
+      font-weight: 800;
+      font-size: smaller;
+      color: rgb(12, 12, 12);
+  }
+  #mobileNavigation #space{
+      width: 20%;
+      height: 100vh;
+      background-color: black;
+      opacity: 0;
+      transition: 2s;
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: none;
+      z-index: 2;
+  }
+}
+/*for iphone 4 and <320px*/
+@media only screen and (max-width:320px){
+    #navFooter{
+        margin-top: 2rem;
+    }
+}
+/*for recharge box*/
+@media only screen and (max-width:704px){
+    #recharge_div #text p,
+    #btnAndInput #button_div button i,
+    #btnAndInput #button_div button img
+    {
+        display: none;
+    }
+    #recharge_div{
+       flex-direction: column;
+       height: 15rem;
+       align-items: center;
+       justify-content: center;
+       line-height: 2rem;
+    }
+    #recharge_div #text{
+        justify-content:center;
+        align-items: center;
+    }
+    #btnAndInput{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: yelowgreen;
+        min-width: 80%;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+    }
+    #btnAndInput #button_div{
+        height: 5em;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    #btnAndInput #button_div button{
+        margin: 0 auto;
+        text-align: center;
+        color: yellow;
+    }
+    #banner{
+        position: absolute;
+        top: 19rem;
+    }
+    #experienceMobile{
+        display: block;
+    }
+}
+
+@media only screen and (max-width:920px){
+   #experience_div{
+       display: none;
+   }
+}
+
+@media only screen and (min-width:466px){
+    #experienceMobile{
+        margin-top: 5.8rem;
+    }
+}
+/*for black seaction*/
+@media only screen and (max-width:865px){
+   #black{
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       padding: 0;
+       position: relative;
+   }
+   #black #one{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       width: 90%;
+   }
+   #black #one #enjoy h3{
+       text-align: center;
+       font-size: 15px;
+       color: rgb(197, 216, 216);
+
+   }
+   #black #one #para{
+       text-align: center;
+       font-size: small;
+       width: 100%;
+   }
+   #black #two{
+       justify-content: center;
+       align-items: center;
+   }
+   #black #one button{
+       width: 12rem;
+   }
+   #black #blackLogo{
+       text-align: center;
+   }
+}
+/*postpaid seaction*/
+@media only screen and (max-width:776px){
+    #post2{
+        overflow-x: hidden;
+    }
+    #post2 img{
+        width: 6rem;
+        height: 80%;
+    }
+    #post1{
+        width: 80%;
+    }
+    #post1 #postBox{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+}  
+/*for responsive footer*/
+@media only screen and (max-width:1057px){
+    footer{
+        display: none;
+    }
+    #footerMobile{
+       display: block;
+    }
+}
+@media only screen and (max-width:280px){
+    #footerMobile{
+        margin-top: 13rem;
+    }
+}  
+/*for >360px mobile in navigation last footer */
+@media only screen and (max-width:375px){
+    #navFooter #list{
+        margin-top: -1.3rem;
+    }
+}
